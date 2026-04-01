@@ -1,49 +1,15 @@
 #include <iostream>
-#include "PhanSo.h"
-#include "PhanSo.cpp"
+#include "NgayThangNam.h"
+#include "NgayThangNam.cpp"
+using namespace std;
 int main() {
-    PhanSo a, b;
-
-    cout << "Nhap phan so A:\n";
+    NgayThangNam a;
+    cout << "Nhap ngay thang nam: " << endl;
     a.Nhap();
-
-    cout << "Nhap phan so B:\n";
-    b.Nhap();
-
-    cout << "\nPhan so A: ";
-    a.RutGon();
+    cout << "\nNgay thang nam vua nhap la: " << endl;
     a.Xuat();
-
-    cout << "\nPhan so B: ";
-    b.RutGon();
-    b.Xuat();
-
-    // Tính toán
-    PhanSo tong = a.Tong(b);
-    PhanSo hieu = a.Hieu(b);
-    PhanSo tich = a.Tich(b);
-    PhanSo thuong = a.Thuong(b);
-
-    cout << "\n\nTong: ";
-    tong.Xuat();
-
-    cout << "\nHieu: ";
-    hieu.Xuat();
-
-    cout << "\nTich: ";
-    tich.Xuat();
-
-    cout << "\nThuong: ";
-    thuong.Xuat();
-
-    // So sánh
-    int cmp = a.SoSanh(b);
-    if (cmp == 1)
-        cout << "\nA > B";
-    else if (cmp == 0)
-        cout << "\nA = B";
-    else
-        cout << "\nA < B";
-
+    a.NgayThangNamTiepTheo();
+    cout << "\nNgay thang nam tiep theo la: " << endl;
+    a.Xuat();
     return 0;
 }
