@@ -25,7 +25,7 @@ void GioPhutGiay :: TinhCongThemMotGiay() {
         iPhut++;
         if (iPhut == 60) {
             iPhut == 0;
-            iGio++
+            iGio++;
             if (iGio == 24) {
                 iGio == 0;
             }
