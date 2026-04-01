@@ -21,13 +21,13 @@ void GioPhutGiay :: Xuat() {
 void GioPhutGiay :: TinhCongThemMotGiay() {
     iGiay++;
     if (iGiay == 60) {
-        iGiay == 0;
+        iGiay = 0;
         iPhut++;
         if (iPhut == 60) {
-            iPhut == 0;
+            iPhut = 0;
             iGio++;
             if (iGio == 24) {
-                iGio == 0;
+                iGio = 0;
             }
         }
     }
